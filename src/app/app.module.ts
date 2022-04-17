@@ -23,6 +23,7 @@ import { UserComponent } from './user/user.component';
 import { DialogUserComponent } from './dialog-user/dialog-user.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { environment } from '../environments/environment';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { environment } from '../environments/environment';
     AppComponent,
     DashboardComponent,
     UserComponent,
-    DialogUserComponent
+    DialogUserComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
