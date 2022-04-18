@@ -1,5 +1,10 @@
 <mat-card class="user_detail_header">
-
+    <button mat-icon-button class="pin_rigth_upper_corner" [matMenuTriggerFor]="userMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    <mat-menu #userMenu="matMenu">
+        <button mat-menu-item (click)="editUserDetail()">Edit</button>
+    </mat-menu>
     <img src="./assets/img/1.webp">
     <div class="user_details">
         <h2>{{user.firstName}} {{ user.lastName }}</h2>
@@ -8,6 +13,14 @@
 </mat-card>
 
 <mat-card class="mt_32">
+
+    <button mat-icon-button class="pin_rigth_upper_corner" [matMenuTriggerFor]="addressMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    <mat-menu #addressMenu="matMenu">
+        <button mat-menu-item (click)="editAddressDetail()">Edit</button>
+    </mat-menu>
+
 
     <mat-card-title>Address</mat-card-title>
 

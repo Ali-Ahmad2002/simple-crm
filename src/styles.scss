@@ -21,3 +21,14 @@ body {
 .mt_32 {
     margin-top: 32px;
 }
+
+.dialogContainer {
+    position: relative;
+    mat-progress-bar {
+        position: absolute;
+        left: -24px;
+        top: -24px;
+        right: -24px;
+        width: calc(100% + 48px);
+    }
+}
